@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 HongKongukah.com
+# SPDX-License-Identifier: MIT
+
+services:
+  prod-hongkongukah:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8003:8000"
+    env_file:
+      - ../.env
+    volumes:
+      - ./databases:/hongkongukah/databases

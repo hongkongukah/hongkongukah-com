@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 HongKongukah.com
+# SPDX-License-Identifier: MIT
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
