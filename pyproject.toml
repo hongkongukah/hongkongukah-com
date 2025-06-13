@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2025 HongKongukah.com
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "hongkongukah-com"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.4"
+dependencies = [
+    "bootstrap-flask>=2.5.0",
+    "flask>=3.1.1",
+    "gunicorn[eventlet]>=23.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]

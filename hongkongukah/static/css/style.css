@@ -1,0 +1,49 @@
+/*
+ * SPDX-FileCopyrightText: 2025 HongKongukah.com
+ * SPDX-License-Identifier: MIT
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body > .container {
+    padding: 100px 0;
+}
+
+.layout-navbar {
+    background-color: #000000;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    margin-right: 5px;
+    color: rgba(229, 26, 26, 100);
+}
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: rgba(229, 26, 26, 100);
+}
+
+.navbar-toggler, .nav-icon {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.profile-image {
+    border-radius: 50px;
+}
+
+.hk-red {
+    color: rgba(229, 26, 26, 100);
+}
+
+.add-shadow {
+    text-shadow: black -3px 3px;
+}
