@@ -5,17 +5,14 @@
 start-prod:
 	docker compose -f docker/prod-docker-compose.yaml up -d --build
 
+# TODO: Use NGINX container and app container
 .PHONY: start-test
 start-test:
-	docker compose -f docker/test-docker-compose.yaml up -d --build
+	python manage.py runserver 127.0.0.1:8004
 
 .PHONY: stop-prod
 stop-prod:
 	docker compose -f docker/prod-docker-compose.yaml down prod-hongkongukah --volumes
-
-.PHONY: stop-test
-stop-test:
-	docker compose -f docker/test-docker-compose.yaml down test-hongkongukah --volumes
 
 .PHONY: lint
 lint:

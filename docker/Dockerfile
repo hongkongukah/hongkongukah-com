@@ -9,16 +9,19 @@ WORKDIR /app
 
 # Copy necessary folders
 COPY hongkongukah/ hongkongukah/
+COPY core/ core/
+# COPY static/ static/
+# COPY .env .env
+COPY manage.py manage.py
 
 # Install Python app dependencies
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
+RUN python manage.py collectstatic --no-input
+
 # Expose port for gunicorn
 EXPOSE 8000
-
-# Copy environment file
-COPY .env .env
 
 # Start gunicorn and serve website
 CMD ["gunicorn", "--workers=3", "-k", "eventlet", "-b", "0.0.0.0:8000", "hongkongukah.wsgi"]

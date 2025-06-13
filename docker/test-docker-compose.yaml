@@ -11,4 +11,4 @@ services:
     env_file:
       - ../.env
     volumes:
-      - .././databases:/hongkongukah/databases
+      - .././databases:/app/databases
