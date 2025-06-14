@@ -1,6 +1,0 @@
-# SPDX-FileCopyrightText: 2025 HongKongukah.com
-# SPDX-License-Identifier: MIT
-
-django~=5.2
-gunicorn[eventlet]~=23.0
-python-dotenv~=1.1
