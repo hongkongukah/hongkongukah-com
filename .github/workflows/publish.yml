@@ -19,7 +19,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           # Change to directory
-          cd /srv/www/hongkongukah
+          cd /srv/www/hongkongukah-com
 
           # Update the repository
           git fetch
