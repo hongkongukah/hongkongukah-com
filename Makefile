@@ -11,11 +11,11 @@ start-test:
 
 .PHONY: stop-prod
 stop-prod:
-	docker compose -f docker/prod-docker-compose.yaml down prod-hongkongukah --volumes
+	docker compose -f docker/prod-docker-compose.yaml down prod-hongkongukah
 
 .PHONY: stop-test
 stop-test:
-	docker compose -f docker/test-docker-compose.yaml down test-hongkongukah --volumes
+	docker compose -f docker/test-docker-compose.yaml down test-hongkongukah
 
 .PHONY: lint
 lint:
