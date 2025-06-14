@@ -8,6 +8,13 @@ html {
     min-height: 100%;
 }
 
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
 body > .container {
     padding: 100px 0;
 }
@@ -19,7 +26,7 @@ body > .container {
 .navbar-brand {
     margin-left: 10px;
     margin-right: 5px;
-    color: rgba(229, 26, 26, 100);
+    color: rgba(236, 26, 46, 1);
 }
 
 .nav-item {
@@ -28,7 +35,7 @@ body > .container {
 }
 
 .nav-link {
-    color: rgba(229, 26, 26, 100);
+    color: rgba(236, 26, 46, 1);
 }
 
 .navbar-toggler, .nav-icon {
@@ -41,7 +48,7 @@ body > .container {
 }
 
 .hk-red {
-    color: rgba(229, 26, 26, 100);
+    color: rgba(236, 26, 46, 1);
 }
 
 .add-shadow {
